@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+<ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+        <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <button id="toggleBtn">☰</button>
+
+    <h1>Browse Products</h1>
+    <p class="subtitle">Power, protection, and savings in one place</p>
+
+    <div class="top-bar">
+      <input type="text" placeholder="Search products...">
+      <select>
+        <option>All Categories</option>
+      </select>
+    </div>
+
+<!-- MEMBERSHIP BANNER -->
+<div class="membership-banner" id="membershipBanner">
+  <div class="banner-left">
+    <div class="text">
+      <h3>Become a Member and Get <span>40% OFF!</span></h3>
+      <p>Unlock exclusive discounts and member benefits.</p>
+    </div>
+  </div>
+
+  <button class="member-btn" id="memberBtn">Be a Member</button>
+</div>
+
+
+<!-- PRODUCTS -->
+<div class="product-container">
+
+  <div class="product-card">
+    <span class="badge">⚡ Appliance Protection</span>
+    <img src="products/triple-guard.png" class="product-img">
+    <h3>Triple Guard</h3>
+    <p class="desc">Appliance Protector</p>
+    <span class="mini-badge">⭐ Best for Refrigerators</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="2500">₱2500</p>
+      <small class="low-stock">Only 3 left!</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Energy Saving</span>
+    <img src="products/heater.png" class="product-img">
+    <h3>Heater Power Saver</h3>
+    <p class="desc">Resistive Load Power Saver</p>
+    <span class="mini-badge">⭐ For Electric Kettles & Irons</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="2500">₱2500</p>
+      <small class="in-stock">99 in stocks</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Appliance Protection</span>
+    <img src="products/triple-guard-2.png" class="product-img">
+    <h3>Triple Guard for Aircon</h3>
+    <p class="desc">Appliance Protection</p>
+    <span class="mini-badge">⭐ Best for Aircon</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="2995">₱2995</p>
+      <small class="in-stock">99 in stocks</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Wellness</span>
+    <img src="products/negative-ion.png" class="product-img">
+    <h3>Negative Ion Device</h3>
+    <p class="desc">Centralized Aircon Ionizer</p>
+    <span class="mini-badge">⭐ Improves Indoor Air Quality</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="2998">₱2998</p>
+      <small class="low-stock">Only 5 left!</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Saver</span>
+    <img src="products/sticker.png" class="product-img">
+    <h3>Scalar Sticker</h3>
+    <p class="desc">Anti-Radiation Energy Saver</p>
+    <span class="mini-badge">⭐ Best for Smartphones</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="200">₱200</p>
+      <small class="low-stock">Only 5 left!</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Automotive</span>
+    <img src="products/oil-saver.png" class="product-img">
+    <h3>FuOil Saver 250ml</h3>
+    <p class="desc">Prolong Life Span of Engine</p>
+    <span class="mini-badge">⭐ Best for All Types of Engines</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="650">₱650</p>
+      <small class="low-stock">Only 2 left!</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Automotive</span>
+    <img src="products/oil-saver.png" class="product-img">
+    <h3>FuOil Saver 60ml</h3>
+    <p class="desc">Prolong Life Span of Engine</p>
+    <span class="mini-badge">⭐ Best for All Types of Engines</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="200">₱200</p>
+      <small class="in-stock">99 in stocks</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Saver</span>
+    <img src="products/gold.png" class="product-img">
+    <h3>Amazing Tube</h3>
+    <p class="desc">LPG Saver</p>
+    <span class="mini-badge">⭐ Best for Saving LPG</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="1500">₱1500</p>
+      <small class="in-stock">99 in stocks</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">⚡ Saver</span>
+    <img src="products/quantum.png" class="product-img">
+    <h3>Quantum Energy</h3>
+    <p class="desc">Energy Saver</p>
+    <span class="mini-badge">⭐ Best for Motorized Vehicles</span>
+    <div class="bottom-row">
+      <p class="new-price" data-price="300">₱300</p>
+      <small class="in-stock">99 in stocks</small>
+    </div>
+    <button class="cart-btn">🛒 Add to Cart</button>
+  </div>
+
+</div>
+  
+
+</div>
+      
+    </div>
+  </main>
+
+</div>
+
+<script src="products.js"></script>
+<script src="account.js"></script>
+<script src="products-member.js"></script>
+
+</body>
+</html>

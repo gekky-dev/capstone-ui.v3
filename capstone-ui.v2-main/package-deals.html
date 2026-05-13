@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="package-deals.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+<ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+        <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+  </aside>
+
+  <main class="main">
+    <button id="toggleBtn">☰</button>
+
+    <h1>Package Deals</h1>
+    <p class="subtitle">Save more with bundled electrical packages</p>
+
+    <div class="top-bar">
+      <input type="text" placeholder="Search products...">
+      <select>
+        <option>All Categories</option>
+      </select>
+    </div>
+
+<div class="membership-banner">
+  <div class="banner-left">
+    <div class="text">
+      <h3>Unlock Exclusive Package Deals</h3>
+      <p>Purchase any bundle to become a member and enjoy special benefits.</p>
+    </div>
+  </div>
+
+  <button class="member-btn">Be a Member</button>
+</div>
+
+<div class="package-grid">
+
+  <!-- CARD 1 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>PRIME PACKAGE</h1>
+    <h2>Basic starter package with essential product value</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>3 PCS</span><span>Scalar Energy Saver Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱250.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>STARTER PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>15 PCS</span><span>Scalar Energy Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱999.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>STARTER PACKAGE</h1>
+    <h2>Package Option B</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>2 BOTTLES</span><span>FuOil Saver</span></div>
+      <div class="bundle-row"><span>8 PCS</span><span>Quantum Fuel Energy Saver</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱999.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>EASY BRONZE PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative ION</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>15 PCS</span><span>Scalar Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>3 Months To Pay</span>
+      <strong>₱1,888.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>EASY BRONZE PACKAGE</h1>
+    <h2>Package Option B</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Power Boost</span></div>
+      <div class="bundle-row"><span>6 BOTTLES</span><span>FuOil Saver Oil</span></div>
+      <div class="bundle-row"><span>24 PCS</span><span>Quantum Energy Fuel Saver</span></div>
+    </div>
+
+    <div class="price">
+      <span>3 Months To Pay</span>
+      <strong>₱1,888.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>BRONZE PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative Ion</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>15 PCS</span><span>Scalar Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱4,498.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 7 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>BRONZE PACKAGE</h1>
+    <h2>Package Option B</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Power Boost</span></div>
+      <div class="bundle-row"><span>6 BOTTLES</span><span>FuOil Saver Oil</span></div>
+      <div class="bundle-row"><span>24 PCS</span><span>Quantum Energy Fuel Saver</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱4,498.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 8 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>SILVER PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative Ion</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard For Ref</span></div>
+      <div class="bundle-row"><span>30 PCS</span><span>Scalar Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱7,998.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 9 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>GOLD PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>2 UNITS</span><span>Negative Ion</span></div>
+      <div class="bundle-row"><span>2 UNITS</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard For Ref</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard For Air Con</span></div>
+      <div class="bundle-row"><span>30 PCS</span><span>Scalar Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱15,996.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 10 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>GOLD PACKAGE</h1>
+    <h2>Package Option B</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>2 UNITS</span><span>Power Boost</span></div>
+      <div class="bundle-row"><span>12 BOTTLES</span><span>FuOil Saver Oil</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard For Ref</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard For Air Con</span></div>
+      <div class="bundle-row"><span>48 PCS</span><span>Quantum Energy Fuel Saver</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱15,996.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 11 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>PLATINUM PACKAGE</h1>
+    <h2>Package Option A</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>2 UNIT</span><span>Negative Ion Device</span></div>
+      <div class="bundle-row"><span>2 UNIT</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Ref</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Aircon</span></div>
+      <div class="bundle-row"><span>30 PCS</span><span>Scalar Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱35,000.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+  <!-- CARD 12 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>PLATINUM PACKAGE</h1>
+    <h2>Package Option B</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>2 UNIT</span><span>Power Boost</span></div>
+      <div class="bundle-row"><span>12 BOTTLES</span><span>FuOil Saver Oil</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Ref</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Aircon</span></div>
+      <div class="bundle-row"><span>48 PCS</span><span>Quantum Energy Fuel Saver</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱35,000.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+  
+  </main>
+
+</div>
+
+<script src="products.js"></script>
+<script src="account.js"></script>
+<script src="be-a-member.js"></script>
+
+</body>
+</html>

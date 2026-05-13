@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+    <ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li class="active"><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+
+     <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+      <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <button id="toggleBtn">☰</button>
+
+    <h1>Place an Order</h1>
+    <p class="subtitle">Select items you want to order.</p>
+
+    <section class="card cart-card">
+      <div class="cart-table-header" id="cartTableHeader">
+        <div class="col-product">Product</div>
+        <div class="col-price">Price</div>
+        <div class="col-qty">Quantity</div>
+        <div class="col-subtotal">Subtotal</div>
+      </div>
+
+      <div id="cartItemsContainer" class="cart-items-container"></div>
+
+      <div id="emptyCartState" class="empty-cart">
+        <div class="empty-cart-icon">🛒</div>
+        <h3>Your cart is empty</h3>
+        <p>Add products first to continue your order.</p>
+      </div>
+
+      <div class="cart-footer" id="cartFooter">
+        <label class="select-all-wrap">
+          <input type="checkbox" id="selectAll" disabled />
+          <span>Select All</span>
+        </label>
+
+        <div class="cart-footer-right">
+          <div class="cart-total-wrap">
+            <span class="cart-total-label">Total:</span>
+            <span class="cart-total" id="cartTotal">₱0</span>
+          </div>
+
+          <button class="btn-primary" id="placeOrderBtn" disabled>
+            Place Order
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-grid" id="detailsSection">
+      <div class="card detail-card">
+        <h2>Delivery Information</h2>
+
+        <div class="field">
+          <label for="fullName">Full Name *</label>
+          <input id="fullName" type="text" placeholder="Enter your full name" />
+        </div>
+
+        <div class="field">
+          <label for="contactNumber">Contact Number *</label>
+          <input id="contactNumber" type="text" placeholder="Enter your contact number" />
+        </div>
+
+        <div class="field">
+          <label for="deliveryAddress">Delivery Address *</label>
+          <input id="deliveryAddress" type="text" placeholder="Enter your complete address" />
+        </div>
+
+        <div class="field">
+          <label for="specialInstructions">Special Instructions (Optional)</label>
+          <textarea id="specialInstructions" placeholder="Enter any instructions for delivery"></textarea>
+        </div>
+      </div>
+
+      <div class="card detail-card">
+        <h2>Payment Information</h2>
+
+        <div class="field">
+          <label for="paymentMethod">Payment Method *</label>
+          <select id="paymentMethod">
+            <option value="">Select payment method</option>
+            <option>GCash</option>
+            <option>Bank Transfer</option>
+            <option>Cash on Delivery</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="referenceNumber">Reference Number *</label>
+          <input id="referenceNumber" type="text" placeholder="Enter transaction reference number" />
+        </div>
+
+        <div class="field">
+          <label for="proofOfPayment">Upload Proof of Payment *</label>
+          <input id="proofOfPayment" type="file" />
+        </div>
+      </div>
+
+      <div class="card detail-card summary-card">
+        <h2>Order Summary</h2>
+
+        <div class="summary-line">
+          <span>Subtotal:</span>
+          <span id="summarySubtotal">₱0</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Total:</span>
+          <span id="summaryTotal">₱0</span>
+        </div>
+
+        <div class="note-box">
+          <strong>Note:</strong>
+          <p>Delivery fee will be collected separately by courier.</p>
+        </div>
+
+        <button class="btn-primary confirm-btn" id="confirmOrderBtn">
+          Confirm Order
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="products.js"></script>
+<script src="account.js"></script>
+<script src="track-status.js"></script>
+<script src="order.js"></script>
+</body>
+</html>

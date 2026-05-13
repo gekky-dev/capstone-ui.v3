@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: #1e3a5f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/* LOGO */
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 90px;
+  transition: 0.3s;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  flex: 1;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 15px;
+  height: 45px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.menu li a:hover,
+.menu li.active a {
+  background: #2f5ea3;
+}
+
+/* ICON + TEXT */
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+/* ACCOUNT */
+.account-wrapper {
+  position: relative;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.account:hover {
+  background: #2f5ea3;
+}
+
+/* DROPDOWN */
+.account-dropdown {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+
+  background: #e3ecf7;
+  color: #1e3a5f;
+
+  border-radius: 10px;
+  padding: 8px;
+
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.account-dropdown.show {
+  display: flex;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  color: #1e3a5f;
+  text-decoration: none;
+}
+
+.dropdown-item:visited {
+  color: #1e3a5f;
+}
+
+.dropdown-item:hover {
+  background: #2f5ea3;
+  color: white;
+  text-decoration: none;
+}
+
+/* COLLAPSED STATE */
+.sidebar.collapsed {
+  width: 88px;
+  padding: 16px 12px;
+}
+
+/* hide text */
+.sidebar.collapsed .text {
+  display: none;
+}
+
+/* center menu */
+.sidebar.collapsed .menu li a {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+.account-dropdown .dropdown-item.active {
+  background: #2f5ea3;
+  color: white;
+  text-decoration: none;
+}
+
+.account-dropdown .dropdown-item.active:visited {
+  color: white;
+}
+
+.account-dropdown .dropdown-item.active .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* center account */
+.sidebar.collapsed .account {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+/* smaller logo */
+.sidebar.collapsed .logo img {
+  width: 56px;
+}
+
+/* ICON */
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.sidebar.collapsed .text {
+  display: none;
+}
+
+/* ACCOUNT */
+.account-wrapper {
+  position: relative;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.account:hover {
+  background: #2f5ea3;
+}
+
+/* FIX CENTERING ON COLLAPSE */
+.sidebar.collapsed .account {
+  justify-content: center;
+  padding: 12px 0;
+  gap: 0;
+}
+
+/* DROPDOWN */
+.account-dropdown {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  background: #e3ecf7;
+  color: #1e3a5f;
+  border-radius: 10px;
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.account-dropdown.show {
+  display: flex;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #2f5ea3;
+  color: white;
+}
+
+.dropdown-item .icon {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0);
+}
+
+.dropdown-item:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* hide text in dropdown when collapsed */
+.sidebar.collapsed .dropdown-item span {
+  display: none;
+}
+
+.sidebar.collapsed .dropdown-item {
+  justify-content: center;
+}
+
+html.sidebar-preload .sidebar,
+html.sidebar-preload .sidebar * {
+  transition: none !important;
+}
+
+html.sidebar-collapsed .sidebar {
+  width: 88px;
+  padding: 16px 12px;
+}
+
+html.sidebar-collapsed .sidebar .text {
+  display: none;
+}
+
+html.sidebar-collapsed .sidebar .menu li a {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+html.sidebar-collapsed .sidebar .account {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+html.sidebar-collapsed .sidebar .logo img {
+  width: 56px;
+}
+
+html.sidebar-collapsed .sidebar .dropdown-item span {
+  display: none;
+}
+
+html.sidebar-collapsed .sidebar .dropdown-item {
+  justify-content: center;
+}
+
+/* BUTTON */
+#toggleBtn {
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  box-shadow: 0 6px 14px rgba(30, 58, 95, 0.18);
+  transition: 0.2s ease;
+}
+
+#toggleBtn:hover {
+  transform: translateY(-1px);
+  background: #274975;
+}

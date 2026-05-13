@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="membership-selection.css">
+</head>
+
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+    <ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+      <div class="account-dropdown" id="accountMenu">
+        <div class="dropdown-item">
+          <img src="icons/account-setting.png" class="icon">
+          <span>Account Settings</span>
+        </div>
+
+        <div class="dropdown-item">
+          <img src="icons/logoutt.png" class="icon">
+          <span>Logout</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+    <main class="main">
+    <button id="toggleBtn">☰</button>
+    <!-- CONTENT -->
+    <section class="content">
+        <div class="package-wrapper">
+
+      <h1>JBM Electro Ventures</h1>
+      <p class="subtitle">Select your Membership Package</p>
+
+      <!-- PACKAGE LIST -->
+      <div class="package-list">
+
+    <label class="package-card green">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Prime Package</h3>
+    <p>Basic starter package with essential product value</p>
+  </div>
+
+  <span class="price">₱250</span>
+</label>
+
+<label class="package-card blue">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Starter Package</h3>
+    <p>Entry-level package with added savings</p>
+  </div>
+
+  <span class="price">₱999</span>
+</label>
+
+<label class="package-card cyan">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Bronze Easy Plan</h3>
+    <p>Installment option for the Bronze Package</p>
+  </div>
+
+  <span class="price">₱1,888</span>
+</label>
+
+<label class="package-card orange">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Bronze Package</h3>
+    <p>Mid-range package with increased product value</p>
+  </div>
+
+  <span class="price">₱4,498</span>
+</label>
+
+<label class="package-card gray">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Silver Package</h3>
+    <p>Larger package with higher discount allocation</p>
+  </div>
+
+  <span class="price">₱7,998</span>
+</label>
+
+<label class="package-card yellow">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Gold Package</h3>
+    <p>High-value package designed for bigger savings</p>
+  </div>
+
+  <span class="price">₱15,996</span>
+</label>
+
+<label class="package-card purple">
+  <input type="radio" name="membership">
+
+  <div class="package-info">
+    <h3>Platinum Package</h3>
+    <p>Maximum-value package with the highest savings potential</p>
+  </div>
+
+  <span class="price">₱35,000</span>
+</label>
+</div>   
+
+      <button class="purchase-btn">
+        Purchase
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
+<script src="products.js"></script>
+<script src="account.js"></script>
+<script src="membership-selection.js"></script>
+
+</body>
+</html>

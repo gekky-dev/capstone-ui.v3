@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment</title>
+  
+<script src= "preload.js"></script>
+<link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="book-appointment.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+  <ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+      <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <button id="toggleBtn">☰</button>
+    <section class="appointment-hero">
+      <div class="appointment-header">
+        <h1>Book an Appointment</h1>
+        <p class="subtitle">Schedule a consultation or service appointment</p>
+      </div>
+
+      <div class="appointment-card">
+        <div class="appointment-card-title">
+          <h2>Appointment Details</h2>
+          <p>Select date, time, and service type</p>
+        </div>
+
+        <form class="appointment-form">
+          <div class="form-group">
+            <label for="appointment-date">Appointment Date <span class="required">*</span></label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+            <p class="unavailable-note">Dates with strikethrough are unavailable for booking</p>
+          </div>
+
+          <div class="form-group">
+            <label for="time-slot">Time Slot <span class="required">*</span></label>
+            <select id="time-slot" name="time-slot" required>
+              <option value="">Select a time slot</option>
+              <option value="09:00">09:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="13:00">01:00 PM</option>
+              <option value="14:00">02:00 PM</option>
+              <option value="15:00">03:00 PM</option>
+              <option value="16:00">04:00 PM</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="service-type">Service Type <span class="required">*</span></label>
+            <select id="service-type" name="service-type" required>
+              <option value="">Select a service</option>
+              <option value="consultation">Consultation</option>
+              <option value="installation">Installation</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="repair">Repair</option>
+              <option value="inspection">Inspection</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="appointment-card">
+        <div class="appointment-card-title">
+          <h2>Contact Information</h2>
+          <p>We'll use this to confirm your appointment</p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="full-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" name="full-name" placeholder="Juan Dela Cruz" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="09XX XXX XXXX" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="additional-notes">Additional Notes (Optional)</label>
+            <textarea id="additional-notes" name="additional-notes" placeholder="Any specific concerns or requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="confirm-button">Confirm Appointment</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="services-card">
+        <h2>Available Services</h2>
+        <ul class="services-list">
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Consultation</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Demonstration</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Installation</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Maintenance</span>
+          </li>
+          <li>
+            <span class="checkmark">✓</span>
+            <span>Repair</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-note">
+        <p><strong>Note:</strong> All appointments are subject to availability. You will receive a confirmation email within 24 hours.</p>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<script src="products.js"></script>
+<script src="book-appointment.js"></script>
+<script src="track-status.js"></script>
+
+</body>
+</html>

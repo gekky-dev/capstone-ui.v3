@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="account-settings.css">
+</head>
+
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+    <ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+    
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+    <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+  </aside>
+
+  <main class="main">
+    <button id="toggleBtn">☰</button>
+
+    <section class="account-hero">
+     <section class="account-hero">
+    <div class="page-header">
+      <h1>Account Settings</h1>
+      <p class="subtitle">Manage your profile and security settings</p>
+    </div>
+
+    <div class="settings-container">
+      <!-- Profile Section -->
+      <section class="settings-section">
+        <h2>Profile</h2>
+        
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <img src="icons/userr.png" alt="Profile Picture">
+          </div>
+          
+          <div class="profile-info">
+            <div class="info-row">
+              <label>Full Name</label>
+              <p>John Doe</p>
+            </div>
+            <div class="info-row">
+              <label>Email Address</label>
+              <p>john.doe@email.com</p>
+            </div>
+            <div class="info-row">
+              <label>Member Since</label>
+              <p>Jan 15, 2024</p>
+            </div>
+          </div>
+
+          <button id="editProfileBtn" class="btn btn-primary">Edit Profile</button>
+        </div>
+      </section>
+
+      <!-- Account Security Section -->
+      <section class="settings-section">
+        <h2>Account Security</h2>
+        
+        <div class="security-card">
+          <div class="security-item">
+            <div class="security-info">
+              <h3>Password</h3>
+              <p>Last changed 2 months ago</p>
+            </div>
+            <button class="btn btn-secondary">Change</button>
+          </div>
+
+          <div class="security-item">
+            <div class="security-info">
+              <h3>Two-Factor Authentication</h3>
+              <p>Status: <span class="status-active">Active</span></p>
+            </div>
+            <button class="btn btn-secondary">Manage</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    </section>
+  </main>
+
+</div>
+
+<!-- Edit Profile Modal -->
+<div id="editProfileModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Edit Profile</h2>
+      <span class="close-modal">&times;</span>
+    </div>
+
+    <form id="editProfileForm" class="modal-form">
+      <div class="form-group">
+        <label for="fullNameInput">Full Name</label>
+        <input type="text" id="fullNameInput" name="fullName" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="emailInput">Email Address</label>
+        <input type="email" id="emailInput" name="email" placeholder="Enter your email address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="memberSinceInput">Member Since</label>
+        <input type="text" id="memberSinceInput" name="memberSince" placeholder="e.g., Jan 15, 2024" required>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+        <button type="button" id="saveProfileBtn" class="btn btn-primary">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="account-edit.js"></script>
+<script src="products.js"></script>
+<script src="account.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Status</title>
+
+  <script src= "preload.js"></script>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="track-status.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+<ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
+
+   <div class="account-wrapper">
+
+  <div class="account" id="accountBtn">
+    <img src="icons/userr.png" class="icon">
+    <span class="text">Account</span>
+  </div>
+
+    <div class="account-dropdown" id="accountMenu">
+  <a href="account.html" class="dropdown-item">
+    <img src="icons/account-setting.png" class="icon">
+    <span>Account Settings</span>
+  </a>
+
+  <div class="dropdown-item">
+    <img src="icons/logoutt.png" class="icon">
+    <span>Logout</span>
+  </div>
+</div>
+
+</div>
+  </aside>
+
+  <main class="main-content">
+    <button id="toggleBtn">☰</button>
+    <section class="track-hero">
+      <div class="track-header">
+        <h1>Track Your Orders and Appointments</h1>
+        <p>Stay updated on the status of your orders and appointments with JBM Products.</p>
+      </div>
+
+      <div class="track-card">
+        <div class="track-card-title">
+          <h2>Track by ID</h2>
+        </div>
+
+        <form class="track-form" action="#" method="get">
+          <label for="track-input" class="sr-only">
+          </label>
+          <input
+            id="track-input"
+            name="track-id"
+            type="text"
+          />
+          <button type="submit" class="track-button">
+            <span>Track</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="track-content">
+      <div class="track-tabs">
+        <button class="tab active" type="button" data-tab="orders">My Orders</button>
+        <button class="tab" type="button" data-tab="appointments">My Appointments</button>
+      </div>
+      
+      <div class="tab-content">
+        <div id="orders" class="tab-pane active"></div>
+        <div id="appointments" class="tab-pane"></div>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<script src="products.js"></script>
+<script src="track-status.js"></script>
+
+</body>
+</html>
