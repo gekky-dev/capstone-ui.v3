@@ -1,5 +1,5 @@
 const user = {
-  role: localStorage.getItem("role") ? localStorage.getItem("role") : "member"
+  role: localStorage.getItem("role") ? localStorage.getItem("role") : "guest"
 };
 // ===============================
 // ACTIVATE MEMBERSHIP
