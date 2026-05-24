@@ -197,18 +197,27 @@
   </div>
 
   <div class="product-card"
-    data-description="Helps reduce electricity consumption for heating appliances like irons and kettles.">
-    <span class="badge">⚡ Saver</span>
-    <img src="products/quantum.png" class="product-img">
-    <h3>Quantum Energy</h3>
-    <p class="desc">Energy Saver</p>
-    <span class="mini-badge">⭐ Best for Motorized Vehicles</span>
-    <div class="bottom-row">
-      <p class="new-price" data-price="300">₱300</p>
-      <small class="in-stock">99 in stocks</small>
-    </div>
-    <button class="cart-btn">🛒 Add to Cart</button>
+  data-name="Quantum Energy"
+  data-brand="JBM"
+  data-type="Energy Saver"
+  data-technology="Scalar Energy / Negative Ion Technology"
+  data-application="Motorized Vehicles"
+  data-power="No power required passive"
+  data-features="Helps support smoother energy flow|Designed for passive use|No batteries or charging needed|Easy to place on vehicles"
+  data-compatibility="Cars|Motorcycles|Tricycles|Jeepneys|Trucks"
+  data-warranty-details="1 year product warranty|Warranty applies to factory defects|Keep proof of purchase for warranty claims"
+  data-description="Helps reduce electricity consumption for heating appliances like irons and kettles.">
+  <span class="badge">⚡ Saver</span>
+  <img src="products/quantum.png" class="product-img">
+  <h3>Quantum Energy</h3>
+  <p class="desc">Energy Saver</p>
+  <span class="mini-badge">⭐ Best for Motorized Vehicles</span>
+  <div class="bottom-row">
+    <p class="new-price" data-price="300">₱300</p>
+    <small class="in-stock">99 in stocks</small>
   </div>
+  <button class="cart-btn">🛒 Add to Cart</button>
+</div>
 
 <!-- =========================
 PRODUCT POPUP MODAL
@@ -217,10 +226,8 @@ PRODUCT POPUP MODAL
 
   <div class="modal">
 
-    <!-- CLOSE -->
     <button class="close-btn" id="closeBtn">&times;</button>
 
-    <!-- LEFT -->
     <div class="left">
       <img 
         class="product-popup-img"
@@ -230,7 +237,6 @@ PRODUCT POPUP MODAL
       />
     </div>
 
-    <!-- RIGHT -->
     <div class="right">
 
       <div class="badge" id="popupBadge">
@@ -253,61 +259,94 @@ PRODUCT POPUP MODAL
       <p class="desc" id="popupDesc">
         Product description here...
       </p>
+<div class="tabs">
+  <div class="tab active" data-tab="specifications">Specifications</div>
+  <div class="tab" data-tab="features">Features</div>
+  <div class="tab" data-tab="compatibility">Compatibility</div>
+  <div class="tab" data-tab="warranty">Warranty</div>
+</div>
 
-      <!-- TABS -->
-      <div class="tabs">
-        <div class="tab active">Specifications</div>
-        <div class="tab">Features</div>
-        <div class="tab">Compatibility</div>
-        <div class="tab">Warranty</div>
+<div class="tab-content-area">
+
+  <div class="tab-content active" id="specifications">
+    <div class="specs">
+
+      <div class="spec-item">
+        <strong>Product Name</strong>
+        <span id="specName">Heater Power Saver</span>
       </div>
 
-      <!-- SPECS -->
-      <div class="specs">
-
-        <div class="spec-item">
-          <strong>Operating Voltage</strong>
-          220V AC, 60Hz
-        </div>
-
-        <div class="spec-item">
-          <strong>Working Temp</strong>
-          0°C - 55°C
-        </div>
-
-        <div class="spec-item">
-          <strong>Max Current</strong>
-          15 Amps
-        </div>
-
-        <div class="spec-item">
-          <strong>Dimension</strong>
-          8.5 x 6 x 3 cm
-        </div>
-
+      <div class="spec-item">
+        <strong>Brand</strong>
+        <span id="specBrand">JBM</span>
       </div>
 
-      <!-- FOOTER -->
-      <div class="footer">
+      <div class="spec-item">
+        <strong>Type</strong>
+        <span id="specType">Resistive Load Power Saver</span>
+      </div>
 
-        <div class="qty">
-          <button id="minus">−</button>
-          <span id="qty">1</span>
-          <button id="plus">+</button>
-        </div>
+      <div class="spec-item">
+        <strong>Technology</strong>
+        <span id="specTechnology">Energy Saving Technology</span>
+      </div>
 
-        <button class="cart-btn">
-          🛒 Add to Cart
-        </button>
+      <div class="spec-item">
+        <strong>Application</strong>
+        <span id="specApplication">Home Appliances</span>
+      </div>
 
-        <button class="wishlist">♡</button>
-
+      <div class="spec-item">
+        <strong>Power</strong>
+        <span id="specPower">Standard use</span>
       </div>
 
     </div>
   </div>
+
+  <div class="tab-content" id="features">
+    <ul class="popup-list">
+      <li>Helps reduce electricity consumption</li>
+      <li>Designed for heat-generating appliances</li>
+      <li>Easy plug-and-use setup</li>
+      <li>Compact and portable design</li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="compatibility">
+    <ul class="popup-list">
+      <li>Electric kettle</li>
+      <li>Rice cooker</li>
+      <li>Electric iron</li>
+      <li>Electric stove</li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="warranty">
+    <ul class="popup-list">
+      <li>1 year product warranty</li>
+      <li>Warranty applies to factory defects</li>
+      <li>Keep proof of purchase for warranty claims</li>
+    </ul>
+  </div>
+
 </div>
 
+<div class="footer">
+  <div class="qty">
+    <button id="minus">−</button>
+    <span id="qty">1</span>
+    <button id="plus">+</button>
+  </div>
+
+  <button class="cart-btn">
+    🛒 Add to Cart
+  </button>
+
+    </div>
+  </div>
+</div>
+</div>
 </div>
   
 
