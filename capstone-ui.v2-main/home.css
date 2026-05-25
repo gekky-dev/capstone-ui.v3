@@ -262,6 +262,19 @@
   background: #6d28d9;
   color: white;
   border: none;
+  text-decoration: none;
+}
+.join-btn:hover {
+  background: #5b21b6;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(109, 40, 217, 0.25);
+}
+
+.join-btn:visited,
+.join-btn:active {
+  text-decoration: none;
 }
 
 /* ACTIONS */

@@ -3,21 +3,6 @@
   flex: 1;
   padding: 30px;
 }
-/* BUTTON */
-#toggleBtn {
-  background: #1e3a5f;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  cursor: pointer;
-  font-size: 20px;
-  line-height: 1;
-  box-shadow: 0 6px 14px rgba(30, 58, 95, 0.18);
-  transition: 0.2s ease;
-}
-
 
 .settings-header {
   margin-bottom: 40px;
@@ -219,7 +204,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: slideDown 0.3s ease-out;
 }
-
+/* Gives popups a softer entrance so they feel less sudden when they appear. */
 @keyframes slideDown {
   from {
     opacity: 0;

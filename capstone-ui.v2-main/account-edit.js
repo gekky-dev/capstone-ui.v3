@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const fullNameInput = document.getElementById('fullNameInput');
         const emailInput = document.getElementById('emailInput');
         const memberSinceInput = document.getElementById('memberSinceInput');
-        
+        // The modal starts with the current profile values so users can edit without retyping everything.
         const currentName = document.querySelector('.info-row:nth-child(1) p')?.textContent || '';
         const currentEmail = document.querySelector('.info-row:nth-child(2) p')?.textContent || '';
         const currentMemberSince = document.querySelector('.info-row:nth-child(3) p')?.textContent || '';
