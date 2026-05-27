@@ -41,6 +41,10 @@ body {
   font-weight: bold;
 }
 
+.footer-section.brand .footer-logo {
+  width: 160px;
+}
+
 .social-icons {
   display: flex;
   gap: 15px;
