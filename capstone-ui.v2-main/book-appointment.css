@@ -54,6 +54,7 @@ html {
   color: #6b7280;
 }
 
+
 /* Form Styles */
 .appointment-form,
 .contact-form {
@@ -251,3 +252,43 @@ html {
 }
 
 
+/* Appointment layout: details beside services */
+@media (min-width: 901px) {
+  .appointment-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    grid-template-areas:
+      "header header"
+      "details services"
+      "contact contact";
+    gap: 24px;
+    align-items: start;
+  }
+
+  .appointment-header {
+    grid-area: header;
+  }
+
+  .appointment-details-card {
+    grid-area: details;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .services-section {
+    grid-area: services;
+    width: auto;
+    margin-top: 26px;
+    padding: 0;
+    align-self: start;
+  }
+
+  .services-card {
+    margin-top: 0;
+  }
+
+  .contact-info-card {
+    grid-area: contact;
+    width: 100%;
+  }
+}
